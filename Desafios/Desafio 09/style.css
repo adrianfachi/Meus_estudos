@@ -1,0 +1,40 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background: linear-gradient(to left, rgb(87, 128, 0), rgb(174, 255, 0));
+}
+
+main{
+    background-color: rgb(195, 222, 169);
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.botoes{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    
+}
+
+.display{
+    padding: 3rem 0 0 .5rem;
+    background-color: white;
+    margin: .5rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    
+}
+
+.numeros{
+    display: flex;
+    gap: .5rem;
+}
+

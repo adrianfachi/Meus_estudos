@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="display" id="display"></div>
+        <div class="numeros">
+            <input type="button" value="7" class="botoes" id="7" onclick="insert('7')">
+            <input type="button" value="8" class="botoes" id="8" onclick="insert('8')">
+            <input type="button" value="9" class="botoes" id="9" onclick="insert('9')">
+            <input type="button" value="&#43;" class="botoes" id="mais" onclick="insert(' &#43; ')">
+        </div>
+        <div class="numeros">
+            <input type="button" value="4" class="botoes" id="4" onclick="insert('4')">
+            <input type="button" value="5" class="botoes" id="5" onclick="insert('5')">
+            <input type="button" value="6" class="botoes" id="6" onclick="insert('6')">
+            <input type="button" value="&minus;" class="botoes" id="menos" onclick="insert(' &minus; ')">
+        </div>
+        <div class="numeros">
+            <input type="button" value="1" class="botoes" id="3" onclick="insert('1')">
+            <input type="button" value="2" class="botoes" id="2" onclick="insert('2')">
+            <input type="button" value="3" class="botoes" id="3" onclick="insert('3')">
+            <input type="button" value="&times;" class="botoes" id="vezes" onclick="insert(' &times; ')">
+        </div>
+        <div class="numeros">
+            <input type="button" value="=" class="botoes" id="res" onclick="res()">
+            <input type="button" value="0" class="botoes" id="0" onclick="insert('0')">
+            <input type="button" value="&#9003;" class="botoes" id="backspace" onclick="backspace()">
+            <input type="button" value="&divide;" class="botoes" id="dividido" onclick="insert(' &divide; ')">
+           
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

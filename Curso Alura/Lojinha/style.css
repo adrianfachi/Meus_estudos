@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #146C94;
+    --cor-terciaria: #F6F1F1;
+    --cor-hover: #19A7CE;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: var(--cor-primaria);
+    padding: 2% 0;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.link-menu{
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.link-menu:hover{
+    color: var(--cor-hover);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cima{
+    background-color: var(--cor-secundaria);
+    padding: 8% 0;
+    color: var(--cor-primaria);
+    font-size: 1.75rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 3.125rem;
+    font-family: 'Krona One', sans-serif;
+}
+
+.baixo{
+    background-color: var(--cor-terciaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 110px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: var(--cor-primaria);
+}
+
+h2{
+    font-size: 1.5rem;
+    font-family: 'Krona One', sans-serif;
+}
+
+.img-principal{
+    box-shadow: 10px 10px 10px black;
+    border-radius: 50px;
+}
+
+.produtos{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.imagens{
+    display: flex;
+    gap: 80px;
+}
+
+.foto-produto{
+    border-radius: 20px;
+}
+
+.titulo-imagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-terciaria);
+    padding: 7%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: var(--cor-primaria);
+    gap: 10px;
+    
+}
+
+.link-contato{
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+.link-contato:hover{
+    color: var(--cor-hover);
+}
+
+footer{
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+}
+
+.footer-final{
+    text-decoration: underline;
+}
+
+
+@media(max-width: 1210px){
+    .produtos{
+        flex-direction: row;
+    }
+
+    .imagens{
+        flex-direction: column;
+    }
+
+    .baixo{
+        flex-direction: column;
+    }
+    
+}
+
+@media(max-width: 800px){
+    .produtos{
+        flex-direction: column;
+    }
+
+    .imagens{
+        flex-direction: column;
+    }
+
+    .baixo{
+        flex-direction: column;}
+    
+    nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+}
+
+
+
+

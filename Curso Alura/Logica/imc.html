@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha(){
+        document.write('<br><br>')
+    
+    }
+
+    function mostra(frase){
+        document.write(frase)
+        pulaLinha()
+    }
+
+    function calculaImc(peso, altura){
+        return peso/ (altura*altura)
+    }
+
+    var imcAdrian = calculaImc(67, 1.75)
+    var imcAmiga = calculaImc(50, 1.62)
+    
+    mostra(imcAdrian.toFixed(2))
+    mostra(imcAmiga.toFixed(2))
+    
+</script>

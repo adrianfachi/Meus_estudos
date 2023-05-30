@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha(){
+        document.write('<br><br>')
+    
+    }
+
+    function mostra(frase){
+        document.write(frase)
+        pulaLinha()
+    }
+
+    var tabuada = prompt('Digite a tabuada que você quer')
+    for(var multiplicador = 1; multiplicador<=10; multiplicador++){
+        var resultado = tabuada * multiplicador
+        mostra(`O valor de ${tabuada} x ${multiplicador} é: ${resultado}`)
+    }
+
+    
+</script>

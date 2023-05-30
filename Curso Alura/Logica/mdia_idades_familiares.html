@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha(){
+        document.write('<br><br>')
+    
+    }
+
+    function mostra(frase){
+        document.write(frase)
+        pulaLinha()
+    }
+    var totalIdades = 0
+    var quantidadeFamiliares = parseInt(prompt("Qual a quantidade de famíliares que sua família possui?"))
+    for(var familiares = 1; familiares <= quantidadeFamiliares; familiares++){
+        var idades = parseInt(prompt(`idade do famíliar ${familiares}`))
+        var totalIdades = totalIdades + idades
+        
+    }
+    var media = totalIdades / quantidadeFamiliares
+
+    mostra(`A media das idades dos seus famíliares é ${media}`)
+
+    
+</script>
