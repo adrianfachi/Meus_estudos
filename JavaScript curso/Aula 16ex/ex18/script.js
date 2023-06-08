@@ -39,22 +39,25 @@ function finalizar(){
     if(vetores == 0) {
         alert('Adicione valores antes de finalizar!')
     }else{
+        vetores.sort()
         var tot = vetores.length
-        var maior = vetores[0]
+        var maior = vetores[tot-1]
         var menor = vetores[0]
         var soma = 0
         var media = 0
         for(pos in vetores){
             soma += vetores[pos]
-            media = soma/tot
-            if(vetores[pos] > maior){
-                maior = vetores[pos]
-            }else{
-                menor = vetores[0]
-            }
-           
-            
-            
+            function fits(x, y) {
+                if (Number.isInteger(y / x)) {
+                  return true;
+                }
+                return false;
+              }
+              if(fits(tot, soma) == true){
+                media = soma/tot
+              }else{
+                media = (soma/tot).toFixed(2)
+              }
         }
             fim.innerHTML = `<p>Ao todo, temos ${tot} valores cadastrados.`
             fim.innerHTML += `<p>O maior número informado foi ${maior}.`
