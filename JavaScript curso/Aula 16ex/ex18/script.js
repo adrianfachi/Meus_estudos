@@ -1,18 +1,18 @@
-var num = document.getElementById('txtn')
+var num = Number(document.getElementById('txtn').value)
 var res = document.getElementById('res')
 var fim = document.getElementById('fim')
 var vetores = []
 
 function isNumero(n){
-    if(Number(n) >= 1 && Number(n) <=100){
+    if(n >= 1 && n <=100){
         return true
     } else {
         return false
     }
 }
 
-function inLista(n, l) {
-    if (l.indexOf(Number(n)) !=-1){
+function inLista(num) {
+    if (vetores.includes(num)){
         return true
     } else {
         return false
@@ -24,7 +24,7 @@ function adicionar(){
     fim.innerHTML = ''
     var num = Number(document.getElementById('txtn').value)
     var res = document.getElementById('res')
-    if(isNumero(num) && !inLista(num, vetores)){
+    if(isNumero(num) && !inLista(num)){
         vetores.push(num)
         let item = document.createElement('option')
         item.text = (`Valor ${num} adicionado.`)
