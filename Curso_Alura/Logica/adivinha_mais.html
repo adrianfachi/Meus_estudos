@@ -1,57 +1,48 @@
-<meta charset="UTF-8">
-    <input type="number" id="input">
-    <input type="button" value="Compare com o meu segredo" onclick="botao()">
+<meta charset="UTF-8" />
+<input type="number" id="input" />
+<input type="button" value="Compare com o meu segredo" onclick="botao()" />
 
 <script>
-    function numero(quantidade){
-        var numero = 1
-        var sorteio = []
-        while(numero <= quantidade){
+  function numero(quantidade) {
+    var numero = 1;
+    var sorteio = [];
+    while (numero <= quantidade) {
+      var numeroAleatorio = Math.round(Math.random() * 10);
 
-            var numeroAleatorio = Math.round(Math.random()*10)
-
-            if(numeroAleatorio !== 0){
-                achou = false
-                for(var posicao = 0; posicao <= sorteio.length; posicao++){
-                    if(sorteio[posicao] == numeroAleatorio){
-                        achou = true
-                        break
-                    }
-                }
-                if(achou == false){
-                    sorteio.push(numeroAleatorio)
-                    numero++
-                }   
-            }
+      if (numeroAleatorio !== 0) {
+        achou = false;
+        for (posicao of sorteio) {
+          if (sorteio[posicao] == numeroAleatorio) {
+            achou = true;
+            break;
+          }
         }
-        return sorteio
-    }
-    
-    var sorteio = numero(3)
-
-    console.log(sorteio)
-    input.focus()
-    function botao(){
-        var input = document.getElementById('input')
-        var valor = false
-        for(var posicao = 0; posicao < sorteio.length; posicao++){
-        if(input.value == sorteio[posicao]){
-            alert('Você ACERTOU!!')
-            valor = true
-            
+        if (achou == false) {
+          sorteio.push(numeroAleatorio);
+          numero++;
         }
-        
+      }
     }
-    if(valor == false){
-            alert('Você ERROU!')
-        }
-        input.focus()
-        input.value = ""
-        
-    }
-    
-    
+    return sorteio;
+  }
 
-    
-    
+  var sorteio = numero(3);
+
+  console.log(sorteio);
+  input.focus();
+  function botao() {
+    var input = document.getElementById("input");
+    var valor = false;
+    for (posicao of sorteio) {
+      if (input.value == sorteio[posicao]) {
+        alert("Você ACERTOU!!");
+        valor = true;
+      }
+    }
+    if (valor == false) {
+      alert("Você ERROU!");
+    }
+    input.focus();
+    input.value = "";
+  }
 </script>
