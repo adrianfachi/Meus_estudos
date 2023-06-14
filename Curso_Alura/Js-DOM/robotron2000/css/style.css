@@ -221,7 +221,7 @@ main {
     margin: 10px 0 0;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1300px) {
     body { 
         font-size: 14px;
         background-size: 1600px 12000px;
