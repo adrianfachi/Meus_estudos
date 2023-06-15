@@ -19,7 +19,7 @@ body, input {
 
 main {
     width: 80vw;
-    height: 80vh;
+    height: 80%;
     margin: 10vh 8vw 10vh 12vw;
     display: flex;
     flex-direction: row;
@@ -35,27 +35,26 @@ main {
 .robo {
     height: 100%;
     width: auto;
-    position: relative;
+    position: absolute;
 }
 
 .titulo {
     transform: rotate(180deg);
     font-weight: 500;
-    font-size: 130px;
+    font-size: 8.125rem;
     position: absolute;
     bottom: 7rem;
     left: -3rem;
     line-height: 0.8;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    color: rgba(255,255,255,0.8)
+    color: rgba(255,255,255,0.8);
 }
 
 .box {
     background: rgba(0,0,0,0.6);
     clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
     border-left: 5px solid var(--main-cinza);
-    height: 80%;
     padding: 2em 10%;
 }
 
@@ -63,24 +62,19 @@ main {
     background: rgba(0,0,0,0.6);
     border-left: 5px solid var(--main-cinza);
     clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
-    flex-basis: 25%;
+    flex-basis: 35%;
     padding: 2em;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    width: absolute;
+    gap: 15px;
+    width: 50%;
+    margin-left: 40%;
 }
 
-.gap {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    position: unset;
-}
 /****************************** Equipamentos *****/
 
 .equipamentos {
-    flex-basis: 32%;
+    flex-basis: 42%;
 }
 
 .montador {
@@ -172,7 +166,7 @@ main {
 }
 
 .estatistica-titulo {
-    font-size: 1.5em;
+    font-size: 2rem;
     border-bottom: 1px solid var(--main-cinza);
     flex-basis: 40%;
     text-transform: uppercase;
@@ -180,7 +174,7 @@ main {
 }
 
 .estatistica-valor {
-    flex-basis: 60%;
+    flex-basis: 50%;
     position: relative;
     margin: 10px 0 0;
     order: 2;
@@ -239,6 +233,7 @@ footer {
         flex-direction: column;
         gap: 3vh;
         height: 100%;
+        margin: 10vh auto;
     }
     
     .box_estatisticas {
