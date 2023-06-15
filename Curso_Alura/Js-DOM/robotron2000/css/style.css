@@ -266,6 +266,9 @@ footer {
     .estatistica-valor {
         flex-basis: 30%;
     }
+    .estatistica-titulo {
+        flex-basis: 50%;
+    }
 }
 
 @media screen and (max-width: 1200px) {
