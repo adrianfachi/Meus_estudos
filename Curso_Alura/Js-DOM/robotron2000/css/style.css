@@ -55,7 +55,6 @@ main {
     background: rgba(0,0,0,0.6);
     clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
     border-left: 5px solid var(--main-cinza);
-    padding: 2em 10%;
 }
 
 .box_estatisticas {
@@ -82,7 +81,7 @@ main {
 }
 
 .montador-conteudo {
-    padding: 2em 10%;
+    padding: 2em 2em 4em 2em;
 }
 
 .peca {
