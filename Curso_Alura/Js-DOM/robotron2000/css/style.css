@@ -213,9 +213,10 @@ main {
 footer {
     font-size: 3rem;
     color: white;
-    padding: 40px;
+    padding: 30px;
     text-align: center;
-    background: linear-gradient(rgb(207, 58, 223), rgb(102, 14, 143));
+    background-color: #080211;
+    opacity: 0.8;
 }
 
 @media screen and (max-width: 1300px) {
