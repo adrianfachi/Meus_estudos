@@ -56,10 +56,9 @@ function criaElemento(item) {
 	
 	lixeira.addEventListener('click', (evento) => {
 		evento.preventDefault();
-		const elemento = document.getElementById(item.nome).parentElement
-		elemento.remove()
-		const existe = itens.find(id => id)
-		const index = itens.indexOf(existe)
+		const elemento = document.getElementById(item.nome)
+		elemento.parentElement.remove()
+		const index = itens.indexOf(item)
 		itens.splice(index, 1)
 		console.log(itens)
 		localStorage.setItem('itens', JSON.stringify(itens))
