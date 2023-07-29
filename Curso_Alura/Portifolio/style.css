@@ -10,12 +10,11 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: -webkit-gradient(linear, left top, right top, from(#8a3513), to(#150800)) no-repeat;;
 }
 
 body{
     color: var(--cor-secundaria);
-    background: -webkit-gradient(linear, left top, right top, from(#8a3513), to(#150800)) no-repeat;
+    background: linear-gradient(to right, #8a3513, #150800);
     
 }
 
@@ -89,7 +88,6 @@ h1{
 }
 
 .links{
-    background-color: -webkit-gradient(linear, left top, right top, from(#8a3513), to(#150800)) no-repeat;
     text-decoration: none;
     font-size: 1.5rem;
     color: var(--cor-secundaria);
@@ -145,6 +143,13 @@ footer{
     .minha-foto{
         width: 70%;
     }
+@media (max-width: 450px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 }
 
 
