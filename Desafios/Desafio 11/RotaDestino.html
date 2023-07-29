@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Seleção de rota</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/rotaDestino.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <a href="home.html"><img src="Imagens/logo.png" alt="Logo"></a>
+            </div>
+            <div class="ancoras-header">
+                <a href="motorHome.html" class="link-normal">Nosso hub</a>
+                <a href="" class="link-normal">Quem somos</a>
+                <a href="" class="link-normal">Produtos e serviços</a>
+                <a href="" class="link-normal">Parcerias</a>
+                <a href="" class="easy-trip">Easy trip</a>
+            </div>
+        </header>
+        <main>
+            <section>  
+                <div class="titulo">
+                    <h1>Rota Calculada</h1>
+                    <p id="datas"></p>
+                    <hr>
+                </div>
+                <div id="locais">
+                    <form>
+                        <label for="estados">Estado de Destino</label>
+                        <select id="estados">
+                            <option value=""></option>
+                        </select>
+                    </form>
+                    <form>
+                        <label>Cidade para locar o veículo</label>
+                        <select name="" id="CidadePartida">
+                            <option value=""></option>
+                            <option value="Belo Horizonte, MG">Belo Horizonte - MG</option>
+                            <option value="Curitiba, PR">Curitiba - PR</option>
+                            <option value="Fortaleza, CE">Fortaleza - CE</option>
+                            <option value="Manaus, AM">Manaus - AM</option>
+                            <option value="Porto Alegre - RS">Porto Alegre - RS</option>
+                            <option value="Recife, PE">Recife - PE</option>
+                            <option value="Rio de Janeiro, RJ">Rio de Janeiro - RJ</option>
+                            <option value="São Paulo, SP">São Paulo - SP</option>
+                            <option value="Salvador, BH">Salvador - BH</option>
+                        </select>
+                     </form>
+                    
+                    <form>
+                        <label for="cidades">Cidade de Destino</label>
+                        <select name="" id="cidades">
+                            <option value=""></option>
+                        </select>
+                    </form>
+                </div>
+
+                <h2>Filtros de itinerário</h2>
+                <form id="checkbox">
+                    <div class="checklist">
+                        <input type="checkbox" name="" id="Restaurantes" class="checkbox">
+                        <label>Restaurantes</label>
+                    </div>
+                    <div class="checklist">
+                        <input type="checkbox" name="" id="Parques" class="checkbox">
+                        <label>Parques</label>
+                    </div> 
+                    <div class="checklist">
+                        <input type="checkbox" name="" id="Museus" class="checkbox">
+                        <label>Museus</label>
+                    </div>
+                    <div class="checklist">
+                        <input type="checkbox" name="" id="Teatros" class="checkbox">
+                        <label>Teatros</label>
+                    </div>
+                    <div class="checklist">
+                        <input type="checkbox" name="" id="Cinemas" class="checkbox">
+                        <label>Cinemas</label>
+                    </div>
+                </form>
+                <a href="" class="BotaoVisualizar">Visualizar veículos</a>
+                <p class="explicacao">Ao clicar em 'visualizar veículos' mostraremos<br>os veículos disponíveis no dia e no percurso <br>selecionado por você nas telas anteriores</p>
+            </section>
+            <img src="Imagens/Tapete.png" alt="" class="map">
+        </main>
+        <footer>
+            <p class="direitos"> ® EasyCarros © Todos os direitos reservados</p>
+            <a href="" class="fale-conosco"><img src="Imagens/whats 1.png" alt="Logo whatsapp" > Fale conosco via Whatsapp</a>
+        </footer>
+        <script src="script2.js"></script>
+    </body>
+</html>

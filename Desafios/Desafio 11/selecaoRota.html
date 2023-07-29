@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Seleção de rota</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/selecaoRota.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <a href="home.html"><img src="Imagens/logo.png" alt="Logo"></a>
+            </div>
+            <div class="ancoras-header">
+                <a href="motorHome.html" class="link-normal">Nosso hub</a>
+                <a href="" class="link-normal">Quem somos</a>
+                <a href="" class="link-normal">Produtos e serviços</a>
+                <a href="" class="link-normal">Parcerias</a>
+                <a href="" class="easy-trip">Easy trip</a>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="titulo">
+                    <h1>Vamos separar o que temos de melhor para você</h1>
+                </div>
+                <div class="botoes">
+                    <div>
+                        <input type="text" id="DataDePartida" placeholder="Data de partida" onfocus="this.type='date'" class="datas" min="2023-07-12">
+                        <input type="text" id="DataDeRetorno" placeholder="Data de retorno" onfocus="this.type='date'" class="datas">
+                    </div>
+                    <div>
+                        <input type="button" value="Procurar" class="procurar" onclick="procurar()">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p class="direitos"> ® EasyCarros © Todos os direitos reservados</p>
+            <a href="" class="fale-conosco"><img src="Imagens/whats 1.png" alt="Logo whatsapp" > Fale conosco via Whatsapp</a>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2? family= Krona+One & family= Montserrat:wght@400;600 & family= Outfit & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Inter & family= Krona+One & family= Montserrat:wght@400;600 & family= Outfit & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fonte-inter: 'Inter', sans-serif; 
+    --font-outfit: 'Outfit', sans-serif;
+}
+
+header {
+    background-color: #FFFFFF;
+    display: flex;
+    height: 12vh;
+    align-items: center;
+    justify-content: center;
+    gap: 20vw;
+    filter: drop-shadow(0 4px 4px #a8a8a8);
+}
+.ancoras-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    white-space: nowrap;
+    font-family: var(--fonte-inter);
+    font-size: 1,125rem;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+.link-normal {
+    color: #489891;
+}
+
+.easy-trip {
+    background-color: #0CDAC3;
+    padding: 2%;
+    border-radius: 7px;
+    font-family: var(--fonte-inter);
+    font-size: 1,125rem;
+    color: #FFFFFF;
+}
+
+main {
+    height: 68vh;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background-color: #EDF3FF;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    font-weight: 700;
+    font-size: 2rem;    
+    font-family: var(--font-outfit);
+    color: #324156;
+}
+
+.fale-conosco {
+    background-color: #00BB2D;
+    position: absolute;
+    margin-left: 80%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    font-family: var(--fonte-inter);
+    font-size: 1,125rem;
+    color: #FFFFFF;
+    gap: 3px;
+    font-weight: 400;
+    font-size: .8rem;
+    bottom: 0;
+}
+
+@media (max-width: 1300px) {
+    
+    footer {
+        position: relative;
+    }
+}
+
