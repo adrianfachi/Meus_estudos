@@ -10,14 +10,15 @@
 <body>
     <header>
         <div>
-            <a href="home.html"><img src="Imagens/logo.png" alt="Logo"></a>
+            <img src="Imagens/logo.png" alt="Logo">
         </div>
         <div class="ancoras-header">
-            <a href="motorHome.html" class="link-normal">Nosso hub</a>
-            <a href="" class="link-normal">Quem somos</a>
-            <a href="" class="link-normal">Produtos e serviços</a>
-            <a href="" class="link-normal">Parcerias</a>
-            <a href="" class="easy-trip">Easy trip</a>
+            <button id="botao-menu">Menu <span class="barras"></span></button>
+            <ul id="menu">
+                <li><a href="home.html" class="link-normal">Nosso hub</a></li>
+                <li><a href="quemSomos.html" class="link-normal">Quem somos</a></li>
+                <li class="easy-trip"><a href="motorHome.html" id="easy-trip">Easy trip</a></li>
+            </ul>
         </div>
     </header>
     <main class="motorHome">
@@ -29,15 +30,16 @@
                 <a href="RotaFinder1.html" class="links" id="RotaFinder">Conheça a RotaFinder</a>
             </div>
         </div>
-        <div>
+        <div class="galeria">
             <img src="Imagens/galeria2.png" alt="" id="galeria2">
             <img src="Imagens/galeria1.png" alt="" id="galeria1">
-            <a href="" id="galeria">Visite nossa galeria </a>
+            <a href="galeriaDeFotos1.html" id="galeria">Visite nossa galeria </a>
         </div>
     </main>
     <footer>
         <a href="saibaMais.html" class="explicacaoServico">Quero saber mais</a>
-        <a href="" class="fale-conosco"><img src="Imagens/whats 1.png" alt="Logo whatsapp" > Fale conosco via Whatsapp</a>
+        <a href="https://api.whatsapp.com/send?phone=5551996105286" class="fale-conosco"><img src="Imagens/whats 1.png" alt="Logo whatsapp" > Fale conosco via Whatsapp</a>
     </footer>
 </body>
+<script src="app.js"></script>
 </html>

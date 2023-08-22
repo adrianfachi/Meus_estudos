@@ -10,14 +10,15 @@
     <body>
         <header>
             <div>
-                <a href="home.html"><img src="Imagens/logo.png" alt="Logo"></a>
+                <img src="Imagens/logo.png" alt="Logo">
             </div>
             <div class="ancoras-header">
-                <a href="motorHome.html" class="link-normal">Nosso hub</a>
-                <a href="" class="link-normal">Quem somos</a>
-                <a href="" class="link-normal">Produtos e serviços</a>
-                <a href="" class="link-normal">Parcerias</a>
-                <a href="" class="easy-trip">Easy trip</a>
+                <button id="botao-menu">Menu <span class="barras"></span></button>
+                <ul id="menu">
+                    <li><a href="home.html" class="link-normal">Nosso hub</a></li>
+                    <li><a href="quemSomos.html" class="link-normal">Quem somos</a></li>
+                    <li class="easy-trip"><a href="motorHome.html" id="easy-trip">Easy trip</a></li>
+                </ul>   
             </div>
         </header>
         <main>
@@ -26,8 +27,8 @@
                     <h1>Vamos separar o que temos de melhor para você</h1>
                 </div>
                 <div class="botoes">
-                    <div>
-                        <input type="text" id="DataDePartida" placeholder="Data de partida" onfocus="this.type='date'" class="datas" min="2023-07-12">
+                    <div id="datas">
+                        <input type="text" id="DataDePartida" placeholder="Data de partida" onfocus="this.type='date'" class="datas">
                         <input type="text" id="DataDeRetorno" placeholder="Data de retorno" onfocus="this.type='date'" class="datas">
                     </div>
                     <div>
@@ -38,8 +39,9 @@
         </main>
         <footer>
             <p class="direitos"> ® EasyCarros © Todos os direitos reservados</p>
-            <a href="" class="fale-conosco"><img src="Imagens/whats 1.png" alt="Logo whatsapp" > Fale conosco via Whatsapp</a>
+            <a href="https://api.whatsapp.com/send?phone=5551996105286" class="fale-conosco"><img src="Imagens/whats 1.png" alt="Logo whatsapp" > Fale conosco via Whatsapp</a>
         </footer>
+        <script src="app.js"></script>
         <script src="script.js"></script>
     </body>
 </html>

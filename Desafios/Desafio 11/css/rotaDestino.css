@@ -120,6 +120,11 @@ select {
     box-shadow: 0 6px 25px rgb(0, 0, 0, 0.5);
     background-color: #00BB2D;
     color: #fff;
+    cursor: pointer;
+}
+
+.BotaoVisualizar:hover {
+    cursor: pointer;
 }
 
 .direitos {

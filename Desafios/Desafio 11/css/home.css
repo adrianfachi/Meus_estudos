@@ -47,3 +47,14 @@ main {
     font-size: 1,125rem;
     color: #FFFFFF;
 }
+
+@media ( max-width: 800px) {
+    .carro {
+        width: 80%;
+    }
+    
+    main {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}

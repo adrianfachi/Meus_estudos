@@ -1,6 +1,14 @@
-function myFunction(a, b, c, d, e, f){
-    var resultado = (((a+b-c)*d)/e)**f
-    return resultado
+const arr = [3, 2, 2, 4, 5, 14]
+
+function contaMenorRepetido(array) {
+    let contador = 0
+    array.sort((a, b) => a - b)
+    for (let index = 0; index < array.length; index++) {
+        if(array[index] === array[0]) {
+            contador ++
+        }
+    }
+    console.log(contador)
 }
 
-console.log(myFunction(6,5,4,3,2,1))
+contaMenorRepetido(arr)
