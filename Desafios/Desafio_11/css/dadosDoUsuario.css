@@ -16,7 +16,7 @@ main {
     padding: 50px;
     padding-right: 200px;
     font-family: var(--font-outfit);
-    background-attachment: fixed;
+    height: calc(100vh - 14.625rem);
 }
 
 .form {
@@ -31,7 +31,6 @@ main {
 }
 
 #especificacoes {
-    position: absolute;
     margin-left: -10px;
     margin-top: -25px;
     font-size: .8rem;
@@ -76,6 +75,7 @@ p {
     border-radius: 10px;
     border-style: none;
     background-color: #e9e9e9;
+    width: auto;
 }
 
 input[type=number]::-webkit-inner-spin-button { 
@@ -96,4 +96,17 @@ input[type=number] {
     font-size: 1.3rem;
     border-radius: 10px;
     cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding-right: 40px;
+        padding: auto;
+    }
+    .form {
+        width: auto;
+    }
+    .telefone > input {
+        width: 100px;
+    }
 }

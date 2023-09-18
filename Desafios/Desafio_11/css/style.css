@@ -153,6 +153,9 @@ footer {
     
     #menu.active {
         display: flex;
+        height: auto;
+        padding-bottom: 20px;
+        padding-top: 20px;
     }
 
     .fale-conosco {
