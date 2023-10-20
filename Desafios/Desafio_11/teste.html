@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Google Maps Directions</title>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxhd8FN_-EFOI9sT0tooEX9aBAU3dZXb0&libraries=places"></script>
+		<script>
+			var map;
+			var directionsService;
+			var directionsDisplay;
+
+			function initialize() {
+				map = new google.maps.Map(document.getElementById("map"), {
+					center: { lat: 0, lng: 0 },
+					zoom: 8,
+				});
+				directionsService = new google.maps.DirectionsService();
+				directionsDisplay = new google.maps.DirectionsRenderer();
+				directionsDisplay.setMap(map);
+			}
+
+			function calcRoute() {
+				var start = document.getElementById("start").value;
+				var end = document.getElementById("end").value;
+				var request = {
+					origin: start,
+					destination: end,
+					travelMode: "DRIVING",
+				};
+				directionsService.route(request, function (result, status) {
+					if (status == "OK") {
+						directionsDisplay.setDirections(result);
+						var rota = result.routes[0];
+						var distancia = rota.legs[0].distance.text;
+						var tempo = rota.legs[0].duration.text;
+
+						document.getElementById("distancia").textContent = distancia;
+						document.getElementById("tempo").textContent = tempo;
+					}
+				});
+			}
+
+			google.maps.event.addDomListener(window, "load", initialize);
+		</script>
+	</head>
+	<body>
+		<div id="locais">
+            <form>
+                <label for="estados">Estado de Destino</label>
+                <select id="estados">
+                    <option value=""></option>
+                </select>
+            </form>
+            <form>
+                <label>Cidade para locar o veículo</label>
+                <select name="" id="CidadePartida">
+                    <option value=""></option>
+                    <option value="Belo Horizonte, MG">Belo Horizonte - MG</option>
+                    <option value="Curitiba, PR">Curitiba - PR</option>
+                    <option value="Fortaleza, CE">Fortaleza - CE</option>
+                    <option value="Manaus, AM">Manaus - AM</option>
+                    <option value="Porto Alegre - RS">Porto Alegre - RS</option>
+                    <option value="Recife, PE">Recife - PE</option>
+                    <option value="Rio de Janeiro, RJ">Rio de Janeiro - RJ</option>
+                    <option value="São Paulo, SP">São Paulo - SP</option>
+                    <option value="Salvador, BH">Salvador - BH</option>
+                </select>
+            </form>
+
+            <form>
+                <label for="cidades">Cidade de Destino</label>
+                <select name="" id="cidades">
+                    <option value=""></option>
+                </select>
+            </form>
+        </div>
+
+        
+			<button onclick="calcRoute()">Calcular Rota</button>
+		</div>
+		<div><strong>Distância:</strong> <span id="distancia"></span></div>
+		<div><strong>Tempo Estimado:</strong> <span id="tempo"></span></div>
+		<div id="map" style="height: 400px"></div>
+	</body>
+</html>
